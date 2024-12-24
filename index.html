@@ -151,6 +151,28 @@
             border-bottom-left-radius: 20%;
             border-top-right-radius: 20%;
         }
+        #gotop{
+          height: 42px;
+          width: 42px;
+          border-radius: 50%;
+          position: fixed;
+          bottom: 6px;
+          left: 10px;
+          z-index: 1000;
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8cdNpVBiOSNb-paJnSLwSSRxZKtIEeQLbVw&s");
+          background-size: cover;
+        }
+        #chat{
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          position: fixed;
+          bottom: 3px;
+          left: 60px;
+          z-index: 1000;
+          background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png");
+          background-size: cover;
+        }
     </style>
 </head>
 <body>
@@ -302,8 +324,10 @@
 
             <h2 class="section-title">Personal Details</h2>
             <ul>
-                <li>Date of Birth: 12<s>th</s> March 1988</li>
+                <li>Father Name: Ramchandra Maurya</li>
+                <li>Date of Birth: 12<sup>th</sup> March 1988</li>
                 <li>Marital Status: Married</li>
+                <li>Religion: Hindu</li>
             </ul>
             
             <h2 class="section-title">Reference</h2>
@@ -351,6 +375,8 @@
             <p style="margin: 0; font-size: 14px;">Phone: +91-9220973200</p>
         </div>
     </div>
+    <a href="https://wa.me/9220973200" target="_blank"><div id="chat"></div> </a>
+    <a href="#pageup" target="_top"><div id="gotop"></div> </a>
 </footer>
 
 </body>
