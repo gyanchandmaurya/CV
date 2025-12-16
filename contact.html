@@ -43,7 +43,7 @@ button:hover {
   <h2>Solar Enquiry Form</h2>
 
   <form id="enquiryForm">
-    <input type="text" id="names" placeholder="Name" required>
+    <input type="text" id="name" placeholder="Name" required>
     <input type="email" id="email" placeholder="Email" required>
     <input type="number" id="mobile" placeholder="Mobile" required>
     <!-- <input type="place" id="place" placeholder="Location" required> -->
@@ -78,7 +78,7 @@ document.getElementById("enquiryForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
   var data = {
-    name: names.value,
+    name: name.value,
     email: email.value,
     mobile: mobile.value,
     place: place.value,
