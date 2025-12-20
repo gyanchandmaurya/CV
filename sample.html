@@ -8,69 +8,6 @@
 <title>Image Popup</title>
 
 <style>
-/* Overlay */
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* Popup box */
-.popup-box {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    position: relative;
-    max-width: 90%;
-    text-align: center;
-}
-
-/* Image */
-.popup-box img {
-    max-width: 100%;
-    max-height: 70vh;
-    border-radius: 8px;
-}
-
-/* Close button */
-.popup-close {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #ff4d4d;
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* CTA Button */
-.cta-btn {
-    display:flow-root;
-    margin-top: 15px;
-    padding: 10px 25px;
-    background: #25D366;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-}
-.cta-btn:hover {
-    background: #1ebe5d;
-}
-
 .sample-btn {
     display:flow-root;
     margin-top: 15px;
@@ -87,23 +24,6 @@
 </head>
 
 <body>
-
-<!-- Popup -->
-<div class="popup-overlay" id="imagePopup" onclick="outsideClick(event)">
-    <div class="popup-box">
-        <span class="popup-close" onclick="closePopup()">×</span>
-
-        <img src="https://cdn.theatlantic.com/thumbor/aZkgEE6Z683kK60_J84oPTAHtPQ=/2x165:998x688/960x504/media/img/mt/2014/08/shutterstock_193031528/original.jpg" alt="Solar Panel Diagram">
-
-        <!-- CTA -->
-        <a href="https://wa.me/919220973200?text=I%20want%20solar%20panel%20details"
-           target="_blank"
-           class="cta-btn">
-           WhatsApp Enquiry
-        </a>
-    </div>
-</div>
-
   <a href="https://cv-gyanchand.vercel.app/popv1.html" class="sample-btn">Popup of I-frame</a>
     <br>
   <a href="https://cv-gyanchand.vercel.app/popv2.html" class="sample-btn">Popup close only click on Cross button</a>
