@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Popup of i-frame</title>
+
+<style>
+/* Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Popup Box */
+.popup-box {
+    background: #fff;
+    width: 80%;
+    max-width: 900px;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Close Button */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    z-index: 10000;
+}
+
+/* Iframe */
+.popup-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Popup -->
+<div class="popup-overlay" id="popup">
+    <div class="popup-box">
+        <span class="popup-close" onclick="closePopup()">×</span>
+        <iframe src="https://www.mrsolar.com/what-is-a-solar-panel/"></iframe>
+    </div>
+</div>
+
+<script>
+window.onload = function() {
+    setTimeout(function(){
+        document.getElementById("popup").style.display = "flex";
+    }, 500); // popup after 0.5 sec
+};
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
